@@ -36,26 +36,9 @@
                         <li class="user-header">
                             <img src="/static/assets/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
-                            <p>
-                                流体石头 - PHP开发者
-                                <small>10. 2012</small>
-                            </p>
+                            <p>${user.username}</p>
                         </li>
-                        <!-- Menu Body -->
-                        <li class="user-body">
-                            <div class="row">
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">点赞</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">销售</a>
-                                </div>
-                                <div class="col-xs-4 text-center">
-                                    <a href="#">朋友</a>
-                                </div>
-                            </div>
-                            <!-- /.row -->
-                        </li>
+
                         <!-- Menu Footer-->
                         <li class="user-footer">
                             <div class="pull-left">

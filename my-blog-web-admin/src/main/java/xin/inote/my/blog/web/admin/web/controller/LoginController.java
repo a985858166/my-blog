@@ -30,7 +30,7 @@ public class LoginController {
     public String login(){
         return "login";
     }
-    @RequestMapping(value = {"","login"},method = RequestMethod.POST)
+    @RequestMapping(value = {"login"},method = RequestMethod.POST)
     public String login(TbUser tbUser, HttpServletRequest httpServletRequest, Model model){
         BaseResult baseResult = tbUserService.login(httpServletRequest,tbUser);
         //登陆成功
@@ -43,4 +43,11 @@ public class LoginController {
             return login();
         }
     }
+    @RequestMapping(value = "logout")
+    public String logout(HttpServletRequest httpServletRequest){
+        //清除session。相当于注销
+        httpServletRequest.getSession().invalidate();
+        return login();
+    }
+
 }
